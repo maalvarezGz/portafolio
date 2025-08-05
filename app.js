@@ -10,7 +10,7 @@ function agregarParticipante() {
         document.getElementById('nombreParticipante').value = '';
         actualizarListaAmigos();
     } else {
-        alert('No ingresó un nombre (solo letras).');
+        alert('No ingresó un nombre o dejó el cuadro en blanco (ingrese solo texto).');
         document.querySelector('#nombreParticipante').value = ''
 
     }
@@ -40,4 +40,5 @@ function sortearAmigo() {
   const li = document.createElement('li');
   li.textContent = `El amigo secreto es: ${nombreSorteado}`;
   resultado.appendChild(li);
+
 }
